@@ -46,6 +46,12 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Twitterizer.OAuth">
+      <HintPath>..\..\Twitterizer\Twitterizer.OAuth\obj\Release\Twitterizer.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Twitterizer2">
+      <HintPath>..\..\Twitterizer\Twitterizer2\obj\Release\Twitterizer2.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -55,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Mention.cs" />
+    <Compile Include="MentionCollection.cs" />
+    <Compile Include="MyResponse.cs" />
     <Compile Include="Tweet.xaml.cs">
       <DependentUpon>Tweet.xaml</DependentUpon>
     </Compile>

@@ -29,6 +29,13 @@ namespace Sociophobia
             InitializeComponent();
         }
 
+        public Tweet(Mention mention)
+        {
+            m_username = mention.Username;
+            m_tweet = mention.Tweet;
+            InitializeComponent();
+        }
+
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             uxUsernameText.Content = m_username;
